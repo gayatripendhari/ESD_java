@@ -1,16 +1,11 @@
 import java.util.*;
 class Greeting{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int button = sc.nextInt();
-        if(button==1){
-            System.out.println("Hellow");
-        }else if(button==2){
-            System.out.println("Namaste");
-        }else if(button==3){
-            System.out.println("Bonjour");
-        }else{
-                System.out.println("Please enter valid button");
-            }
-        }
+        Scanner s1 = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        //s1.nextLine();
+        String name = s1.nextLine();
+        System.out.println("Hello "+ name+"!...Welcome to our java community." );
+
     }
+}
